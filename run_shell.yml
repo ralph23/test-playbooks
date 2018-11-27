@@ -4,9 +4,9 @@
   gather_facts: true
   tasks:
     - name: Run the specified shell command
-      shell: {{shell}}
+      shell: "{{shell}}"
       register: result
 
     - name: Display the outcome
       debug:
-        msg: {{ result }}
+        msg: "{{ result }}"
